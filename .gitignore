@@ -9,8 +9,11 @@ bower_components
 *.iml
 node_modules/
 .tmp/
-src/main/webapp/dist/
-src/main/webapp/build/
+src/main/webApp/dist/
+src/main/webApp/build/
 .springBeans
 /.apt_generated/
 .factroypath
+/.idea/workspace.xml
+/.idea/misc.xml
+certificate.admin.iml
