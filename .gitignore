@@ -14,7 +14,7 @@ src/main/webApp/build/
 .springBeans
 /.apt_generated/
 .factroypath
-/.idea/workspace.xml
-/.idea/misc.xml
+.idea/workspace.xml
+.idea/misc.xml
 certificate.admin.iml
 logs
