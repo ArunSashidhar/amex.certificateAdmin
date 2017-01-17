@@ -1,0 +1,16 @@
+libs/
+target/
+target/**
+bower_components
+./settings/
+.classpath
+.project
+.idea/
+*.iml
+node_modules/
+.tmp/
+src/main/webapp/dist/
+src/main/webapp/build/
+.springBeans
+/.apt_generated/
+.factroypath
