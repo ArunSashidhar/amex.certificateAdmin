@@ -1,0 +1,366 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the
+ * later versions of this theme.
+ *
+ * We advise that you use use this CSS to override
+ * SmartAdmin styles.
+ *
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ *
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+
+/* util classes */
+.relative {
+    position: relative;
+}
+
+/* styles start*/
+#subjectList.ng-invalid.ng-dirty {
+    border-color: red;
+}
+
+#subjectList.ng-valid.ng-dirty {
+    border-color: lawngreen;
+}
+
+#name.ng-invalid.ng-dirty {
+    border-color: red;
+}
+
+#name.ng-valid.ng-dirty {
+    border-color: lawngreen;
+}
+
+i.fa-warning {
+    font-size: 3em;
+}
+
+.ListItem:hover {
+    background: #3276b1;
+    width: 100%;
+    color: white;
+}
+
+.jarviswidget-color-magenta .nav-tabs li:not(.active) a,
+.jarviswidget-color-magenta > header > .jarviswidget-ctrls a {
+    color: #333 !important;
+}
+
+.jarviswidget-color-pink .nav-tabs li:not(.active) a,
+.jarviswidget-color-pink > header > .jarviswidget-ctrls a {
+    color: #333 !important;
+}
+
+.jarviswidget-color-pinkDark .nav-tabs li:not(.active) a,
+.jarviswidget-color-pinkDark > header > .jarviswidget-ctrls a {
+    color: #333 !important;
+}
+
+.jarviswidget-color-yellow .nav-tabs li:not(.active) a,
+.jarviswidget-color-yellow > header > .jarviswidget-ctrls a {
+    color: #333 !important;
+}
+
+.jarviswidget-color-orange .nav-tabs li:not(.active) a,
+.jarviswidget-color-orange > header > .jarviswidget-ctrls a {
+    color: #333 !important;
+}
+
+.jarviswidget-color-darken > .nav-tabs > li:not(.active) > a,
+.jarviswidget-color-darken > header > .jarviswidget-ctrls a {
+    color: #333 !important;
+}
+
+.jarviswidget-color-purple .nav-tabs li:not(.active) a,
+.jarviswidget-color-purple > header > .jarviswidget-ctrls a {
+    color: #333 !important;
+}
+
+.jarviswidget-color-teal .nav-tabs li:not(.active) a,
+.jarviswidget-color-teal > header > .jarviswidget-ctrls a {
+    color: #333 !important;
+}
+
+.jarviswidget-color-blueDark .nav-tabs li:not(.active) a,
+.jarviswidget-color-blueDark > header > .jarviswidget-ctrls a {
+    color: #333 !important;
+}
+
+.jarviswidget-color-blue .nav-tabs li:not(.active) a,
+.jarviswidget-color-blue > header > .jarviswidget-ctrls a {
+    color: #333 !important;
+}
+
+.jarviswidget-color-red .nav-tabs li:not(.active) a,
+.jarviswidget-color-red > header > .jarviswidget-ctrls a {
+    color: #333 !important;
+}
+
+.jarviswidget-color-redLight .nav-tabs li:not(.active) a,
+.jarviswidget-color-redLight > header > .jarviswidget-ctrls a {
+    color: #333 !important;
+}
+
+.jarviswidget-color-greenDark .nav-tabs li:not(.active) a,
+.jarviswidget-color-greenDark > header > .jarviswidget-ctrls a {
+    color: #333 !important;
+}
+
+.jarviswidget-color-green .nav-tabs li:not(.active) a,
+.jarviswidget-color-green > header > .jarviswidget-ctrls a {
+    color: #333 !important;
+}
+
+.jarviswidget-color-greenLight .nav-tabs li:not(.active) a,
+.jarviswidget-color-greenLight > header > .jarviswidget-ctrls a {
+    color: #333 !important;
+}
+
+/* add-doc button*/
+
+div.dt-buttons {
+    position: absolute;
+    left: 250px;
+    z-index: 1;
+    top: 5px;
+}
+
+#logo img {
+    width: auto;
+    height: 30px;
+}
+
+/* widget titles */
+
+.jarviswidget header span {
+    padding: 7px !important;
+}
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+form.content-type {
+    position: absolute;
+    top: 40px;
+    left: 250px;
+    z-index: 2;
+}
+
+div.review {
+    position: absolute;
+    top: 5px;
+    left: 392px;
+    z-index: 1;
+}
+
+div.requestDocument {
+    position: absolute;
+    top: 5px;
+    left: 247px;
+    z-index: 1;
+}
+
+div.addDocument {
+    position: absolute;
+    top: 5px;
+    left: 532px;;
+    z-index: 1;
+}
+
+div.addSupportingDocument {
+    position: absolute;
+    top: 5px;
+    left: 247px;
+    z-index: 1;
+}
+
+div.reviewOccupancyHistory {
+    position: absolute;
+    top: 43px;
+    left: 1423px;
+    z-index: 1;
+}
+
+input.uploadBox {
+    position: relative;
+    width: 30%;
+    z-index: 1;
+}
+
+.labelButton {
+    font-size: small;
+}
+
+.label-cancel {
+    background-color: black;
+}
+
+.label-open {
+    color: black;
+    border: grey;
+    box-shadow: grey;
+    background-color: #D8F781;
+}
+
+.label-closed {
+    background-color: #61380B;
+}
+
+.label-inProgress {
+    color: black;
+    border: black;
+    box-shadow: black;
+    background-color: #FFFF00;
+}
+
+.label-nonResident {
+    color: black;
+    background-color: #ff944d;
+}
+
+.btn-view {
+    color: black;
+    background-color: transparent;
+    border-color: black;
+    box-shadow: black;
+}
+
+div.appealButton {
+    position: relative;
+    top: 7px;
+    left: 92%;
+    z-index: 1;
+}
+
+label.headings {
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 0.2cm;
+}
+
+.panelHeading {
+    font-size: 134%;
+}
+
+div.subHeadings {
+    position: relative;
+    left: 39%;
+    padding-top: 2.2cm;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.app-modal-window .modal-dialog {
+    width: 71%;
+}
+
+.ag-fresh .ag-header-group-cell-label {
+    text-align: center;
+}
+
+div.workQueuePaging {
+    position: relative;
+    left: 40%;
+}
+
+div.paging {
+    position: relative;
+    left: 36%;
+
+}
+
+span.no-data-found {
+    position: relative;
+    left: 31%;
+    font-size: 18px;
+}
+
+span.widgetHeader {
+    position: absolute;
+    top: -4%;
+    font-size: 16px;
+}
+
+.cfi-calender-card {
+    display: block;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+    -moz-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+    -ms-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+    -o-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+    box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+    margin-bottom: 30px;
+    border-bottom: none;
+    bottom: 0;
+}
+
+.removePanelBorder {
+    -webkit-box-shadow: 0 0px 0px;
+    box-shadow: 0 0px 0px;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.form-group.required .control-label:first-of-type:after {
+    content: " *";
+    color: red;
+}
+
+.control-label.required:first-of-type:after {
+    content: "*";
+    color: red;
+}
+
+.fc-time-grid-event.fc-short .fc-time:before {
+    content: attr(data-full);
+    font-weight: bold;
+}
+
+.fc-time-grid-event.fc-short .fc-time:after {
+    content: normal;
+    font-weight: bold;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    border-color: #dddddd !important;
+}
+
+.ui-widget-content {
+    border-color: #dddddd !important;
+}
+
+.dropzone, td.fc-other-month {
+    background-image: none !important;
+
+}
+
+.ui-widget-header {
+    font-size: large;
+    background-color: white !important;
+}
+
+.align-center {
+    text-align: center;
+}

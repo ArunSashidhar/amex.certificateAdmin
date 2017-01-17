@@ -1,0 +1,22 @@
+<div class="project-context hidden-xs dropdown" dropdown>
+
+    <span class="label">{{getWord('Requests')}}:</span>
+    <span class="project-selector dropdown-toggle" data-toggle="dropdown">
+        {{getWord('Recent Requests')}}
+        <i ng-if="projects.length" class="fa fa-angle-down"></i></span>
+
+    <ul class="dropdown-menu" ng-if="projects.length">
+        <li ng-repeat="student in projects">
+            <a ng-click="goToStudent(student)">RCN: {{student.studentId}} / {{student.studentName}} <i class="fa fa-remove" ng-click="deleteStudent($event,student)"></i> </a>
+            <ul ng-if="student.apps.length">
+                <li ng-repeat="app in student.apps">
+                    <a class="ListItem" ng-click="goToApp(app)">RequestID: {{app.appId}} / {{app.appName}} <i ng-click="deleteApp($event,student,app)" class="fa fa-remove"></i></a>
+                </li>
+            </ul>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a ng-click="clearProjects()"><i class="fa fa-power-off"></i> Clear</a>
+        </li>
+    </ul>
+</div>

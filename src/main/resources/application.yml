@@ -1,0 +1,29 @@
+spring:
+    application.name: TeamManagerAdmin
+    jpa:
+      show-sql: false
+      database: mysql
+      hibernate:
+        ddl-auto: none
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQLDialect
+    jackson:
+        date-format: yyyy-MM-dd'T'HH:mm:ss.SSS'Z'
+
+logging:
+    file: logs
+
+server.port: 8081
+---
+spring:
+    profiles: local
+    jpa:
+        show-sql: true
+        hibernate:
+                ddl-auto: create-drop
+    datasource:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/local_amexCertificate
+        username: root
+        password: Arun1991

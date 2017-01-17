@@ -1,0 +1,89 @@
+<header id="header" class="animated fadeInDown">
+    <div id="logo-group">
+        <span id="logo"> <img src="./styles/img/amex-logo.png" alt="American Express"> </span>
+    </div>
+
+    <span id="extr-page-header-space" style="position: relative;top: -1em;">
+        <span class="hidden-mobile hiddex-xs">Need an account?</span>
+        <a ui-sref="realLogin" class="btn btn-danger">Create account</a>
+    </span>
+</header>
+
+<div id="main" role="main" class="animated fadeInDown">
+    <div id="content" class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 hidden-xs hidden-sm">
+                <h1 class="txt-color-blue login-header-big">American Express Certificate Admin</h1>
+
+                <div class="hero">
+                    <div class="pull-left login-desc-box-l">
+                        <h4 class="paragraph-header">Manage All Your Application Certificates at One place</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+                <div class="well no-padding">
+                    <form ng-submit="vm.login()" id="loginForm" name="loginForm" class="smart-form client-form" novalidate>
+                        <header>Sign In</header>
+                        <fieldset>
+
+                            <!--Username section-->
+
+                            <section class="form-group"
+                                     ng-class="{'has-error': loginForm.username.$invalid && loginForm.username.$touched}">
+                                <label class="label control-label required">Username</label>
+                                <label class="input"><i class="icon-append fa fa-user"></i>
+                                    <input type="text"
+                                           placeholder="Username"
+                                           id="username" name="username"
+                                           ng-model=vm.credentials.username
+                                           required>
+                                    <div class="help-block has-error" ng-messages="loginForm.username.$error"
+                                         ng-if="loginForm.username.$touched">
+                                        <div ng-message="required">Username is Required</div>
+                                    </div>
+                                </label>
+                            </section>
+
+                            <!--Password Section-->
+
+                            <section class="form-group"
+                                     ng-class="{'has-error': loginForm.password.$invalid && loginForm.password.$touched}">
+                                <label class="label control-label required">Password</label>
+                                <label class="input"> <i class="icon-append fa fa-lock"></i>
+                                    <input type="password"
+                                           placeholder="Password"
+                                           id="password" name="password"
+                                           ng-model="vm.credentials.password"
+                                           required>
+                                    <div class="help-block has-error" ng-messages="loginForm.password.$error"
+                                         ng-if="loginForm.password.$touched">
+                                        <div ng-message="required">Password is Required</div>
+                                    </div>
+                                </label>
+
+                                <div class="note">
+                                    <a ui-sref="realLogin">Forgot password?</a>
+                                </div>
+                            </section>
+
+                            <section>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="remember" checked>
+                                    <i></i>Stay signed in</label>
+                            </section>
+                        </fieldset>
+
+                        <footer>
+                            <button type="submit" class="btn btn-primary">
+                                Sign in
+                            </button>
+                        </footer>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
