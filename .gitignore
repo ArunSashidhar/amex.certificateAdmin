@@ -10,3 +10,4 @@ logs
 src/main/resources/META_INF/
 src/test/
 node_modules
+.idea/inspectionProfiles/
