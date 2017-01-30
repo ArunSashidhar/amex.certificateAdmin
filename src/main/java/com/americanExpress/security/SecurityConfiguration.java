@@ -30,7 +30,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.httpBasic().and().authorizeRequests()
-                .antMatchers("/sound/**", "/index.html", "/home.html", "/app/auth/**", "/", "/styles/**",
+                .antMatchers("/sound/**", "/index.html","/user", "/home.html", "/app/auth/**", "/", "/styles/**",
                         "/bower_components/**", "/build/**", "/login")
                 .permitAll().anyRequest().authenticated().and().csrf().csrfTokenRepository(csrfTokenRepository())
                 .and().addFilterAfter(csrfHeaderFilter(), CsrfFilter.class);
@@ -64,7 +64,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication().withUser("user").password("password").roles("USER");
+        auth.inMemoryAuthentication().withUser("User").password("password").roles("USER");
         auth.inMemoryAuthentication().withUser("Arun").password("password").roles("MANAGER");
         auth.inMemoryAuthentication().withUser("Pranav").password("password").roles("MANAGER");
     }
