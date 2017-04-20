@@ -32,6 +32,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         http.httpBasic().and().authorizeRequests()
                 .antMatchers("/sound/**", "/index.html","/user", "/home.html", "/app/auth/**", "/", "/styles/**",
                         "/bower_components/**", "/build/**", "/login")
+                .antMatchers("/admin").roles("ROLE_ADIMIN")
                 .permitAll().anyRequest().authenticated().and().csrf().csrfTokenRepository(csrfTokenRepository())
                 .and().addFilterAfter(csrfHeaderFilter(), CsrfFilter.class);
     }
